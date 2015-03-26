@@ -1,3 +1,21 @@
+
+// mqt = mesos query tool
+// tool to query info from mesos
+// Type of information that can be queried
+// - System overall
+// - Master
+// - Slave
+// - frameworks
+// - tasks
+//
+// # Query on partial attribute names
+// $ mqt --system --attr="build*"
+
+// # Query with attr an value filters
+// $ mqt --master --attr="cluster" --val="3"
+
+// $ mqt 
+
 package mqt
 
 import (
@@ -36,6 +54,10 @@ type State struct {
 // See http://<master-ip>:<port>/help/master/health
 func HealthCheck() bool {
 	return true
+}
+
+func Query(q string) {
+
 }
 
 func decodeState(data []byte) (mState State, err error) {
