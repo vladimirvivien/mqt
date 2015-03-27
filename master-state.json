@@ -1,0 +1,457 @@
+{
+  "activated_slaves": 3,
+  "build_date": "2015-01-19 22:32:25",
+  "build_time": 1421706745,
+  "build_user": "root",
+  "cluster": "development-5003",
+  "completed_frameworks": [],
+  "deactivated_slaves": 0,
+  "elected_time": 1427074024.07139,
+  "failed_tasks": 0,
+  "finished_tasks": 0,
+  "flags": {
+    "allocation_interval": "1secs",
+    "authenticate": "false",
+    "authenticate_slaves": "false",
+    "authenticators": "crammd5",
+    "cluster": "development-5003",
+    "framework_sorter": "drf",
+    "help": "false",
+    "hostname": "10.233.236.211",
+    "initialize_driver_logging": "true",
+    "ip": "10.233.236.211",
+    "log_auto_initialize": "true",
+    "log_dir": "/var/log/mesos",
+    "logbufsecs": "0",
+    "logging_level": "INFO",
+    "port": "5050",
+    "quiet": "false",
+    "quorum": "1",
+    "recovery_slave_removal_limit": "100%",
+    "registry": "in_memory",
+    "registry_fetch_timeout": "1mins",
+    "registry_store_timeout": "5secs",
+    "registry_strict": "false",
+    "root_submissions": "true",
+    "slave_reregister_timeout": "10mins",
+    "user_sorter": "drf",
+    "version": "false",
+    "webui_dir": "/usr/share/mesos/webui",
+    "whitelist": "*",
+    "work_dir": "/var/lib/mesos",
+    "zk": "zk://10.233.236.211:2181/mesos",
+    "zk_session_timeout": "10secs"
+  },
+  "frameworks": [
+    {
+      "active": false,
+      "checkpoint": true,
+      "completed_tasks": [
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "35a934cc-d0ff-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31020-31020]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_KILLED",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427075529
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427075530
+            },
+            {
+              "state": "TASK_KILLED",
+              "timestamp": 1427077844
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "94803a9d-d104-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31030-31030]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_KILLED",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427077846
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427077856
+            },
+            {
+              "state": "TASK_KILLED",
+              "timestamp": 1427078419
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "a066161f-d104-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31020-31020]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_KILLED",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427078420
+            },
+            {
+              "state": "TASK_KILLED",
+              "timestamp": 1427078426
+            }
+          ]
+        }
+      ],
+      "failover_timeout": 4611686018.42739,
+      "hostname": "development-5003-cf8.c.fluid-mind-778.internal",
+      "id": "20150318-205607-3555518730-5050-2510-0000",
+      "name": "Kubernetes",
+      "offered_resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "offers": [],
+      "registered_time": 1427075525.98549,
+      "reregistered_time": 1427075525.98551,
+      "resources": {
+        "cpus": 1.75,
+        "disk": 0,
+        "mem": 448,
+        "ports": "[31000-31000, 31020-31020, 31010-31010, 31030-31030]"
+      },
+      "role": "*",
+      "tasks": [
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "75ffff97-d10b-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31030-31030]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S2",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080805
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080806
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "75ffe87f-d10b-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31030-31030]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S1",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080791
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080793
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "75fdb09f-d10b-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31030-31030]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080788
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080789
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "567720eb-d10a-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31010-31010]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S1",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080515
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080656
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "762f494b-d10a-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31020-31020]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S1",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080511
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080512
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "762f62c4-d10a-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31020-31020]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427080510
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427080511
+            }
+          ]
+        },
+        {
+          "executor_id": "KubeleteExecutorID",
+          "framework_id": "20150318-205607-3555518730-5050-2510-0000",
+          "id": "043ecdf3-d106-11e4-83eb-42010ae9ecd3",
+          "name": "Pod",
+          "resources": {
+            "cpus": 0.25,
+            "disk": 0,
+            "mem": 64,
+            "ports": "[31000-31000]"
+          },
+          "slave_id": "20150323-012701-3555518730-5050-2507-S0",
+          "state": "TASK_RUNNING",
+          "statuses": [
+            {
+              "state": "TASK_STARTING",
+              "timestamp": 1427078449
+            },
+            {
+              "state": "TASK_RUNNING",
+              "timestamp": 1427078487
+            }
+          ]
+        }
+      ],
+      "unregistered_time": 0,
+      "used_resources": {
+        "cpus": 1.75,
+        "disk": 0,
+        "mem": 448,
+        "ports": "[31000-31000, 31020-31020, 31010-31010, 31030-31030]"
+      },
+      "user": "root",
+      "webui_url": ""
+    },
+    {
+      "active": true,
+      "checkpoint": true,
+      "completed_tasks": [],
+      "failover_timeout": 604800,
+      "hostname": "development-5003-cf8.c.fluid-mind-778.internal",
+      "id": "20150316-155609-3555518730-5050-2528-0001",
+      "name": "marathon",
+      "offered_resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "offers": [],
+      "registered_time": 1427074033.34222,
+      "reregistered_time": 1427074033.34225,
+      "resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "role": "*",
+      "tasks": [],
+      "unregistered_time": 0,
+      "used_resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "user": "root",
+      "webui_url": "http://10.233.236.211:8080"
+    },
+    {
+      "active": true,
+      "checkpoint": false,
+      "completed_tasks": [],
+      "failover_timeout": 604800,
+      "hostname": "development-5003-cf8.c.fluid-mind-778.internal",
+      "id": "20150316-155609-3555518730-5050-2528-0000",
+      "name": "chronos-2.3.2_mesos-0.20.1-SNAPSHOT",
+      "offered_resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "offers": [],
+      "registered_time": 1427074024.94193,
+      "reregistered_time": 1427074024.94196,
+      "resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "role": "*",
+      "tasks": [],
+      "unregistered_time": 0,
+      "used_resources": {
+        "cpus": 0,
+        "disk": 0,
+        "mem": 0
+      },
+      "user": "root",
+      "webui_url": ""
+    }
+  ],
+  "git_sha": "2ae1ba91e64f92ec71d327e10e6ba9e8ad5477e8",
+  "git_tag": "0.21.1",
+  "hostname": "10.233.236.211",
+  "id": "20150323-012701-3555518730-5050-2507",
+  "killed_tasks": 3,
+  "leader": "master@10.233.236.211:5050",
+  "log_dir": "/var/log/mesos",
+  "lost_tasks": 0,
+  "orphan_tasks": [],
+  "pid": "master@10.233.236.211:5050",
+  "slaves": [
+    {
+      "attributes": {
+        "host": "development-5003-7da.c.fluid-mind-778.internal"
+      },
+      "hostname": "10.60.198.35",
+      "id": "20150323-012701-3555518730-5050-2507-S2",
+      "pid": "slave(1)@10.60.198.35:5051",
+      "registered_time": 1427080566.89283,
+      "resources": {
+        "cpus": 2,
+        "disk": 4974,
+        "mem": 6475,
+        "ports": "[31000-32000]"
+      }
+    },
+    {
+      "attributes": {
+        "host": "development-5003-5f2.c.fluid-mind-778.internal"
+      },
+      "hostname": "10.213.115.20",
+      "id": "20150323-012701-3555518730-5050-2507-S1",
+      "pid": "slave(1)@10.213.115.20:5051",
+      "registered_time": 1427080507.98338,
+      "resources": {
+        "cpus": 2,
+        "disk": 4974,
+        "mem": 6475,
+        "ports": "[31000-32000]"
+      }
+    },
+    {
+      "attributes": {
+        "host": "development-5003-a5f.c.fluid-mind-778.internal"
+      },
+      "hostname": "10.171.186.143",
+      "id": "20150323-012701-3555518730-5050-2507-S0",
+      "pid": "slave(1)@10.171.186.143:5051",
+      "registered_time": 1427074024.17558,
+      "resources": {
+        "cpus": 2,
+        "disk": 4974,
+        "mem": 6475,
+        "ports": "[31000-32000]"
+      }
+    }
+  ],
+  "staged_tasks": 10,
+  "start_time": 1427074021.34489,
+  "started_tasks": 10,
+  "unregistered_frameworks": [],
+  "version": "0.21.1"
+}

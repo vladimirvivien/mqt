@@ -1,4 +1,3 @@
-
 // mqt = mesos query tool
 // tool to query info from mesos
 // Type of information that can be queried
@@ -9,17 +8,19 @@
 // - tasks
 //
 // # Query on partial attribute names
-// $ mqt --system --attr="build*"
+// $ mqt system --attr="build*"
 
 // # Query with attr an value filters
-// $ mqt --master --attr="cluster" --val="3"
+// $ mqt master --attr="cluster" --val="3"
 
-// $ mqt 
+// $ mqt
 
 package mqt
 
 import (
 	"encoding/json"
+	"fmt"
+	"io"
 )
 
 type MesosData struct {
@@ -70,4 +71,33 @@ func decodeState(data []byte) (mState State, err error) {
 		return State{}, err
 	}
 	return
+}
+
+func search(attr string, source io.Reader) (string, error) {
+	var result interface{}
+	err := json.NewDecoder(source).Decode(&result)
+	if err != nil {
+		return "", err
+	}
+	return find(attr, "", result), nil
+}
+
+func find(node string, val string, tree interface{}) string {
+	switch t := tree.(type) {
+	case map[string]interface{}:
+		for k, v := range t {
+			return find(node, val, v)
+		}
+	case []interface{}:
+		//for i, v := range t {}
+
+	case string:
+		return t
+	case float64:
+		return fmt.Sprintf("%.2f", t)
+	case bool:
+		return fmt.Sprintf("%t", t)
+	}
+
+	return ""
 }
